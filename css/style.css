@@ -2,9 +2,48 @@ body{
 	font-family: Hind, sans-serif;
 }
 
+.btn-evo{
+	background-color: #aa71d0;
+	border-radius: 1px;
+	color: #fff;
+	font-family: Hind, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 20px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.5s;
+}
+
+.btn-evo:hover{
+	background-color: #7e39ac;
+	color: #fff;
+}
+
 
 /* -------------------------------FOOTER----------------------------------------- */
-/* ================COPYRIGHTS================= */
+.copy{
+	background-color: #272532;
+	padding: 125px 0;
+}
+
+.copy p strong{
+	color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.copy p{
+	color: #67647b;
+	margin-bottom: 55px;
+}
+
+.copy div a{
+	text-decoration: none;
+}
+
 .copyrights{
 	background: #211f2a;
 	line-height: 55px;
