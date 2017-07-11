@@ -1,0 +1,47 @@
+body{
+	font-family: Hind, sans-serif;
+}
+
+
+/* -------------------------------FOOTER----------------------------------------- */
+/* ================COPYRIGHTS================= */
+.copyrights{
+	background: #211f2a;
+	line-height: 55px;
+}
+
+.copyrights p{
+	color: #8b8b8b;
+	font-size: 14px;
+	margin: 0;
+}
+
+.copyrights p a{
+	color: #aa71d0;
+	margin-left: 32px;
+}
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
