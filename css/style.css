@@ -1,10 +1,160 @@
 body{
 	font-family: Hind, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.no-margin {
+  margin-right:0;
+  margin-left:0;
+}
+
+.btn-evo{
+	background-color: #aa71d0;
+	border-radius: 1px;
+	color: #fff;
+	font-family: Hind, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 20px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.5s;
+}
+
+.btn-evo:hover{
+	background-color: #7e39ac;
+	color: #fff;
+}
+
+.col-spase{
+	margin-bottom: 25px;
 }
 
 
 /* -------------------------------FOOTER----------------------------------------- */
-/* ================COPYRIGHTS================= */
+.footer-area{
+	background-color: #272532;
+	padding: 125px 0;
+}
+
+.footer-area .logo-name{
+	color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.footer-area p{
+	color: #67647b;
+	font-size: 16px;
+}
+
+.footer-area img{
+	float: left;
+	margin-right: 25px;
+}
+
+.footer-area .social{
+	margin-top: 55px;
+}
+
+.footer-area .social a{
+	margin-right: 25px;
+	text-decoration: none;
+}
+
+.footer-area .social a .fa-facebook{
+	color: #6165fb;
+}
+
+.footer-area .social a .fa-twitter{
+	color: #46bcff;
+}
+
+.footer-area .social a .fa-linkedin{
+	color: #568dd7;
+}
+
+.footer-area .social a .fa-facebook:hover{
+	color: #568dd7;
+}
+
+.footer-area .social a .fa-twitter:hover{
+	color: #6165fb;
+}
+
+.footer-area .social a .fa-linkedin:hover{
+	color: #46bcff;
+}
+
+.footer-area ul{
+	margin-top: 3px;
+	padding-left: 10px;
+}
+
+.footer-area ul li{
+	list-style: none;
+	margin-bottom: 13px;
+}
+
+.footer-area ul li a{
+	color: #fff;
+	font-size: 16px;
+}
+
+.footer-area ul li a:hover{
+	color: #a36dc8;
+	text-decoration: none;
+}
+
+.footer-area .title{
+	color: #fff;
+	font-size: 18px;
+	margin: 0;
+}
+
+.footer-area p span{
+	color: #fff;
+}
+
+.footer-area p a{
+	color: #aa71d0;
+	font-size: 18px;
+}
+
+.footer-area p i{
+	color: #474557;
+	margin-right: 15px;
+	margin-top: 25px;
+}
+
+.footer-area input{
+	background-color: #1c1a24;
+	border: none;
+	border-radius: 1px;
+	height: 50px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+textarea[name="email"]::-moz-placeholder{
+	color: #cccccc;
+	font-family: Hind, sans-serif;
+	font-size: 16px;
+	text-overflow:ellipsis;
+}
+
+input[name="email"]::-webkit-input-placeholder{
+	color: #cccccc;
+	font-family: Hind, sans-serif;
+	font-size: 16px;
+	text-overflow:ellipsis;
+}
+
 .copyrights{
 	background: #211f2a;
 	line-height: 55px;
@@ -22,26 +172,108 @@ body{
 }
 
 
+/* -------------------------------ABOUT PAGE----------------------------------------- */
+
+.about-header {
+  text-align: center;
+  background-image: url(../img/about/about-bg-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
+}
+
+.about-header-title,
+.about-header-description {
+  margin: 0;
+  padding: 0;
+}
+
+.about-header-title {
+  font-size: 53px;
+  line-height: 75px;
+  padding-top: 140px;
+}
+
+.about-header-description {
+  font-size: 22px;
+  line-height: 75px;
+  padding-bottom: 130px;
+}
+
+.about-content {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-content-header {
+  font-family: Playfair Display, sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.about-content-title {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.section-main-slogan {
+  padding-top: 320px;
+  min-height: 800px;
+  background-image: url(../img/about/about-bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.main-slogan-title {
+  font-family: Playfair Display, sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.section-team img {
+  width: 100%;
+}
+
+.section-team div[class*='col-']:first-child,
+.section-team div[class*='col-']:last-child {
+  background-color: #f9fafb;
+}
 
 
-
+.section-clients {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.footer-area img{
+		margin-right: 10px;
+	}
+  
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.footer-area img{
+		margin-right: 25px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+	.section-main-slogan {
+    min-height: 400px;
+    padding-top: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
 }
+
