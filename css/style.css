@@ -20,28 +20,132 @@ body{
 	color: #fff;
 }
 
+.col-spase{
+	margin-bottom: 25px;
+}
+
 
 /* -------------------------------FOOTER----------------------------------------- */
-.copy{
+.footer-area{
 	background-color: #272532;
 	padding: 125px 0;
 }
 
-.copy p strong{
+.footer-area .logo-name{
 	color: #fff;
 	font-family: Montserrat, sans-serif;
 	font-size: 24px;
 	font-weight: 300;
+	margin-bottom: 40px;
 	text-transform: uppercase;
 }
 
-.copy p{
+.footer-area p{
 	color: #67647b;
-	margin-bottom: 55px;
+	font-size: 16px;
 }
 
-.copy div a{
+.footer-area img{
+	float: left;
+	margin-right: 25px;
+}
+
+.footer-area .social{
+	margin-top: 55px;
+}
+
+.footer-area .social a{
+	margin-right: 25px;
 	text-decoration: none;
+}
+
+.footer-area .social a .fa-facebook{
+	color: #6165fb;
+}
+
+.footer-area .social a .fa-twitter{
+	color: #46bcff;
+}
+
+.footer-area .social a .fa-linkedin{
+	color: #568dd7;
+}
+
+.footer-area .social a .fa-facebook:hover{
+	color: #568dd7;
+}
+
+.footer-area .social a .fa-twitter:hover{
+	color: #6165fb;
+}
+
+.footer-area .social a .fa-linkedin:hover{
+	color: #46bcff;
+}
+
+.footer-area ul{
+	margin-top: 3px;
+	padding-left: 10px;
+}
+
+.footer-area ul li{
+	list-style: none;
+	margin-bottom: 13px;
+}
+
+.footer-area ul li a{
+	color: #fff;
+	font-size: 16px;
+}
+
+.footer-area ul li a:hover{
+	color: #a36dc8;
+	text-decoration: none;
+}
+
+.footer-area .title{
+	color: #fff;
+	font-size: 18px;
+	margin: 0;
+}
+
+.footer-area p span{
+	color: #fff;
+}
+
+.footer-area p a{
+	color: #aa71d0;
+	font-size: 18px;
+}
+
+.footer-area p i{
+	color: #474557;
+	margin-right: 15px;
+	margin-top: 25px;
+}
+
+.footer-area input{
+	background-color: #1c1a24;
+	border: none;
+	border-radius: 1px;
+	height: 50px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+textarea[name="email"]::-moz-placeholder{
+	color: #cccccc;
+	font-family: Hind, sans-serif;
+	font-size: 16px;
+	text-overflow:ellipsis;
+}
+
+input[name="email"]::-webkit-input-placeholder{
+	color: #cccccc;
+	font-family: Hind, sans-serif;
+	font-size: 16px;
+	text-overflow:ellipsis;
 }
 
 .copyrights{
@@ -67,12 +171,16 @@ body{
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.footer-area img{
+		margin-right: 10px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.footer-area img{
+		margin-right: 25px;
+	}
 }
 
 /* Small Devices, Tablets */
