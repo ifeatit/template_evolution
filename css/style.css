@@ -31,7 +31,223 @@ body{
 	margin-bottom: 25px;
 }
 
+.btn-evo{
+	background-color: #aa71d0;
+	border-radius: 1px;
+	color: #fff;
+	font-family: Hind, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 20px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.5s;
+}
 
+.btn-evo:hover{
+	background-color: #7e39ac;
+	color: #fff;
+}
+
+.col-spase{
+	margin-bottom: 25px;
+}
+
+.topic{
+	color: #2a2a2a;
+	font-family: "Playfair Display", sans-serif;
+	font-size: 42px;
+	font-weight: normal;
+}
+
+.topic strong{
+	font-style: italic;
+}
+
+.img-responsive{
+	display: inline-block;
+}
+
+/* -------------------------------HEADER----------------------------------------- */
+header{
+	background: url(../img/home/index-bg-1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100$;
+	min-height: 500px;
+	padding-top: 55px;
+}
+
+.navbar-brand{
+	color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-brand span{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.navbar-brand img{
+	float: left;
+	margin-right: 25px;
+}
+
+.navbar-nav>li>a{
+	color: #fff;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	text-shadow: none;
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:active,
+.nav .open>a, 
+.nav .open>a:focus, 
+.nav .open>a:hover,
+.nav .open>a:active{
+	background: transparent;
+	color: #aa71d0;
+	text-decoration: none;
+}
+
+.navbar-nav>li>.dropdown-menu{
+	border-radius: 0;
+	background-color: #272532;
+	padding-bottom: 20px;
+	padding-top: 20px; 
+	position: absolute;
+	left: 15px;
+}
+
+.navbar .dropdown i{
+	margin-left: 5px;
+}
+
+.dropdown-menu>li>a{
+	color: #fff;
+}
+
+.dropdown-menu>li>a:hover{
+	background: transparent;
+	color: #aa71d0;
+	text-decoration: none;
+}
+
+.navbar-toggle{
+	margin-top: 21px;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: #aa71d0;
+	margin-bottom: 3px;
+}
+
+.navbar-toggle .icon-bar.one{
+	width: 25px;
+}
+
+.navbar-toggle .icon-bar.two{
+	width: 15px;
+}
+
+.navbar-toggle .icon-bar.three{
+	width: 35px;
+}
+
+.content{
+	padding: 180px 0;
+} 
+
+.content h1, h2{
+	color: #fff;
+	font-family: "Playfair Display", sans-serif;
+	font-size: 53px;
+	margin: 0;
+}
+
+.content h1{
+	margin-bottom: 20px;
+}
+
+.content h1 strong{
+	font-style: italic;
+}
+
+.content p{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 65px;
+	margin-top: 45px;
+}
+
+.content a{
+	color: #aa71d0;
+	font-size: 18px;
+}
+
+.content a i{
+	margin-left: 10px;
+}
+/* -------------------------------WHY-MOTO--------------------------------------- */
+.why-moto{
+	padding-bottom: 130px;
+}
+
+.why-moto p,
+.why-moto h3{
+	margin-bottom: 30px;
+}
+
+.why-moto p{
+	color: #8b8b8b;
+	font-size: 18px;
+}
+
+.why-moto p span{
+	color: #000;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.why-moto .navbar{
+	box-shadow: 0px 5px 35px 0px rgba(189,189,189,1);
+	margin-bottom: 160px;
+}
+
+.why-moto .navbar-nav>li>a{
+	color: #000;
+}
+
+.why-moto .navbar-nav>li>a:hover,
+.why-moto .navbar-nav>li>a:focus,
+.why-moto .navbar-nav>li>a:active,
+.why-moto .nav .open>a, 
+.why-moto .nav .open>a:focus, 
+.why-moto .nav .open>a:hover,
+.why-moto .nav .open>a:active{
+	background: transparent;
+	color: #aa71d0;
+	text-decoration: none;
+}
+
+.why-moto .navbar-brand{
+	color: #000;
+}
+
+.why-moto .navbar-brand:hover{
+	color: #000;
+}
 /* -------------------------------FOOTER----------------------------------------- */
 .footer-area{
 	background-color: #272532;
@@ -252,28 +468,67 @@ input[name="email"]::-webkit-input-placeholder{
 	.footer-area img{
 		margin-right: 10px;
 	}
-  
-}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.footer-area img{
 		margin-right: 25px;
 	}
+
+	.content h1, h2{
+		font-size: 40px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.navbar-nav>li>a{
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+
+	.content{
+		padding: 80px 0;
+		text-align: center;
+	} 
+
+	.why-moto{
+		padding-bottom: 70px;
+	}
+
+	.why-moto .navbar{
+		margin-bottom: 70px;
+	}
+
+	.why-moto .navbar-brand{
+		margin: 0;
+	}
+
+	.why-moto .navbar-toggle{
+		margin-top: 17px;
+	}
+
+	.why-moto .dropdown-menu>li>a{
+		color: #000;
+	}
+
+	.footer-area{
+		padding: 50px 0;
+	}
+
 	.section-main-slogan {
     min-height: 400px;
     padding-top: 70px;
     padding-right: 15px;
     padding-left: 15px;
   }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
 
 }
 
