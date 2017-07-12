@@ -1,7 +1,12 @@
 body{
-	font-family: Hind, sans-serif;
+	font-family: "Hind", sans-serif;
   font-size: 18px;
   line-height: 26px;
+}
+
+.va-bottom-flex {
+  display: flex;
+  align-items: flex-end;
 }
 
 .no-margin {
@@ -9,9 +14,14 @@ body{
   margin-left:0;
 }
 
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
 .btn-evo{
 	background-color: #aa71d0;
-	border-radius: 1px;
+	border-radius: 2px;
 	color: #fff;
 	font-family: Hind, sans-serif;
 	font-size: 14px;
@@ -60,6 +70,7 @@ body{
 	font-weight: normal;
 }
 
+
 .topic strong{
 	font-style: italic;
 }
@@ -69,7 +80,7 @@ body{
 }
 
 /* -------------------------------HEADER----------------------------------------- */
-header{
+header {
 	background: url(../img/home/index-bg-1.jpg) center no-repeat;
 	background-size: cover;
 	height: 100$;
@@ -256,7 +267,7 @@ header{
 
 .footer-area .logo-name{
 	color: #fff;
-	font-family: Montserrat, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 40px;
@@ -359,14 +370,14 @@ header{
 
 textarea[name="email"]::-moz-placeholder{
 	color: #cccccc;
-	font-family: Hind, sans-serif;
+	font-family: "Hind", sans-serif;
 	font-size: 16px;
 	text-overflow:ellipsis;
 }
 
 input[name="email"]::-webkit-input-placeholder{
 	color: #cccccc;
-	font-family: Hind, sans-serif;
+	font-family: "Hind", sans-serif;
 	font-size: 16px;
 	text-overflow:ellipsis;
 }
@@ -390,6 +401,15 @@ input[name="email"]::-webkit-input-placeholder{
 
 /* -------------------------------ABOUT PAGE----------------------------------------- */
 
+.about-page .why-moto {
+  padding-bottom: 0;
+}
+
+.about-page .why-moto .navbar {
+  box-shadow: 0px 5px 35px 0px rgba(218,218,218,0.36);
+  margin-bottom: 0;
+}
+
 .about-header {
   text-align: center;
   background-image: url(../img/about/about-bg-1.jpg);
@@ -406,14 +426,17 @@ input[name="email"]::-webkit-input-placeholder{
 }
 
 .about-header-title {
+  font-family: "Playfair Display", sans-serif;
   font-size: 53px;
   line-height: 75px;
   padding-top: 140px;
+  margin-bottom: 25px;
 }
 
 .about-header-description {
   font-size: 22px;
-  line-height: 75px;
+  line-height: 1;
+  font-weight: 300;
   padding-bottom: 130px;
 }
 
@@ -423,14 +446,20 @@ input[name="email"]::-webkit-input-placeholder{
 }
 
 .about-content-header {
-  font-family: Playfair Display, sans-serif;
+  margin-top: 0;
+  font-family: "Playfair Display", sans-serif;
   font-size: 42px;
   line-height: 50px;
 }
 
 .about-content-title {
+  margin-bottom: 35px;
   font-size: 28px;
   line-height: 40px;
+}
+
+.about-content-description {
+  margin-bottom: 35px;
 }
 
 .section-main-slogan {
@@ -442,27 +471,81 @@ input[name="email"]::-webkit-input-placeholder{
   color: white;
 }
 
-.main-slogan-title {
-  font-family: Playfair Display, sans-serif;
-  font-size: 42px;
-  line-height: 50px;
+.topic.main-slogan-title {
+  color: #ffffff;
+  margin-bottom: 25px;
 }
 
 .section-team img {
   width: 100%;
+  height: auto;
 }
 
-.section-team div[class*='col-']:first-child,
+/*.section-team div[class*='col-']:first-child,
 .section-team div[class*='col-']:last-child {
   background-color: #f9fafb;
 }
-
+*/
 
 .section-clients {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+.section-features {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.features-item {
+  text-align: center;
+
+}
+
+.features-item-title {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.features-item-icon {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+.features-item-icon img {
+
+}
+
+
+.team-item a{
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+} 
+.team-item a:hover {
+  opacity: 0.7;
+}
+.section-clients-item {
+  min-height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.section-clients-item a {
+  display: block;
+  transition: all 0.2s;
+}
+
+.section-clients-item a:hover {
+  opacity: 0.7;
+}
+
+.section-clients-item img {
+  margin: 0 auto;
+
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.footer-area img{
@@ -524,11 +607,14 @@ input[name="email"]::-webkit-input-placeholder{
     padding-left: 15px;
   }
 
+  .team-item {
+    min-height: 160px;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
 
 }
 
