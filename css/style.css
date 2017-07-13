@@ -126,10 +126,11 @@ header {
 	padding-top: 30px;
 	text-shadow: none;
 }
-.about-page .navbar-nav>li>a{
+.header-default .navbar-nav>li>a,
+.header-default .navbar-brand{
 	color: #2a2a2a;
 }
-.about-page .navbar {
+.header-default .navbar {
 	margin-bottom: 0;
 }
 
@@ -638,17 +639,20 @@ input[name="email"]::-webkit-input-placeholder{
 
 
 	.header-default {
-		background-color: white; 
-		padding-bottom: 70px;
+		background-color: #ffffff; 
 	}
 
 	.header-default .navbar{
-		margin-bottom: 70px;
-		color: 
+		margin-bottom: 0;
+		color: #2a2a2a;
 	}
 
-	.header-default.navbar-brand{
+	.header-default .navbar-brand{
 		margin: 0;
+	}
+	
+	.header-default .navbar-brand span {
+		margin-top: 7px;
 	}
 
 	.header-default .navbar-toggle{
